@@ -90639,16 +90639,15 @@ Supported expressions:
           /* @__PURE__ */ jsxRuntimeExports.jsx(CardHeader, { label: "Task Info" }),
           /* @__PURE__ */ jsxRuntimeExports.jsx(CardBody, { id: "task-card-config", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: clsx(styles$a.grid), children: [
             /* @__PURE__ */ jsxRuntimeExports.jsx(
-              MetaDataView,
+              MetaDataGrid,
               {
                 className: "text-size-small",
-                entries: taskInformation,
-                tableOptions: "sm"
+                entries: taskInformation
               },
               `plan-md-task`
             ),
             /* @__PURE__ */ jsxRuntimeExports.jsx(
-              MetaDataView,
+              MetaDataGrid,
               {
                 entries: {
                   ["Start"]: new Date(
@@ -90658,8 +90657,7 @@ Supported expressions:
                     (evalStats == null ? void 0 : evalStats.completed_at) || 0
                   ).toLocaleString(),
                   ["Duration"]: totalDuration
-                },
-                tableOptions: "sm"
+                }
               }
             )
           ] }) })
